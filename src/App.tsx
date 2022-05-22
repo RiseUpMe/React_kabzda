@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-    debugger
+    console.log("App rendering")
     return (
         <div>
             <AppTitle/>
@@ -21,7 +21,7 @@ function AppTitle() {
 }
 
 function Accordion() {
-    debugger
+    console.log("Accordion rendering")
     return (
         <div>
             <h3>Menu</h3>
@@ -38,15 +38,23 @@ function Accordion() {
 }
 
 function Rating() {
-    debugger
+    console.log("Rating rendering")
     return (
         <>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </>
+    );
+
+}
+
+function Star() {
+    console.log("Star rendering")
+    return(
+        <div>Star</div>
     );
 
 }
