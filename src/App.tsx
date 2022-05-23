@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./components/Accordion/Accordion";
+import Rating from "./components/Rating/Rating";
 
 function App() {
     console.log("App rendering")
@@ -14,49 +16,14 @@ function App() {
 }
 
 function AppTitle() {
+    console.log("AppTitle rendering")
     return (
         <>This is APP component</>
     );
 
 }
 
-function Accordion() {
-    console.log("Accordion rendering")
-    return (
-        <div>
-            <h3>Menu</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
 
 
-        </div>
-
-    );
-}
-
-function Rating() {
-    console.log("Rating rendering")
-    return (
-        <>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </>
-    );
-
-}
-
-function Star() {
-    console.log("Star rendering")
-    return(
-        <div>Star</div>
-    );
-
-}
 
 export default App;
